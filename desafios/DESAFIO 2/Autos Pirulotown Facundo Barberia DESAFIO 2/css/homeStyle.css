@@ -1,0 +1,95 @@
+@font-face {
+	font-family:"BL";
+	src: url("../assets/fonts/aBlackLives.ttf");
+}
+body {
+	margin: 0px;
+	background-image: url("../assets/whiteHexagonBackground.jpg");
+	background-position: right;
+}
+.headerAll {
+	display: inline-block;
+	background-color: lightgrey;
+	width: 1860px;
+	border: 10px;
+}
+.headerList {
+	list-style: none;
+	padding-left: 10px;
+	font-family: "BL";
+}
+.headerNav {
+	font-size: x-large;
+	display: inline;
+	padding-left: 450px ;
+	font-family: "BL";
+	color: black;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.headerNavList {
+	list-style: none;
+	display: inline;
+	padding-right: 30px;
+	padding-top: 30px;
+	color: black;
+}
+.headerTitle {
+	font-size: 30px;
+}
+
+.headerSubTitle {
+	font-size: 20px;
+}
+.articleVendor {
+	display: flex;
+	padding: 15px;
+}
+.articleVendorText {
+	padding-top: 200px;
+	color: black;
+	font-family: "BL";
+	font-size: 40px;
+	text-align: right;
+	border: 30px;
+	border-color: lightgrey;
+}
+.articleBrand {
+	display: flex;
+	padding: 15px;
+}
+
+.articleBrandText {
+	padding-top: 200px;
+	color: black;
+	font-family: "BL";
+	font-size: 40px;
+	text-align: left;
+
+}
+.footerAll {;
+	background-color: lightgrey;
+	display: flex;
+}
+.footerAllList {
+	display: flex;
+	list-style: none;
+	margin: 0px;
+	height: 100px;
+}
+.footerAllListItem {
+	padding-right: 100px;
+	padding-left: 100px;
+	text-align: center;
+	display: inline-flex;
+}
+.footerAllListItemLink {
+	color: black;
+	font-size: 20px;
+	font-family: "BL";
+	display: flex;
+	padding-left: 20px;
+	padding-top: 40px;
+}

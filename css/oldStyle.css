@@ -1,0 +1,99 @@
+@font-face {
+	font-family:"BL";
+	src: url("../assets/fonts/aBlackLives.ttf");
+}
+.gridHome {
+	display: grid;
+	grid-template-columns: 40% 30% 30%; 
+  	grid-template-rows: 15% 35% 35% 15%;  
+  	grid-template-areas:  
+    "icon nav nav"
+    "vendor vendor vendor"
+    "brand brand brand"
+    "footer footer footer";
+	background-image: url("../assets/whiteHexagonBackground.jpg"); 
+}
+.headerAll {
+	background-color: lightgrey;
+	width: 100%;
+	border-bottom: 5px solid black;
+	grid-area: icon;
+}
+.headerList {
+	list-style: none;
+	padding-left: 10px;
+	font-family: "BL";
+	grid-area: icon;
+}
+.headerNav {
+	font-size: x-large;
+	padding-left: px ;
+	color: black;
+	grid-area: nav;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-family: "BL";
+}
+.headerNavList {
+	list-style: none;
+	padding-right: 30px;
+	padding-top: 30px;
+	color: black;
+}
+.headerTitle {
+	font-size: 30px;
+}
+
+.headerSubTitle {
+	font-size: 20px;
+}
+.articleVendor {
+	padding: 15px;
+}
+.articleVendor img {
+	border: 5px solid black;
+	grid-area: img;
+}
+.articleVendorText {
+	padding-top: 200px;
+	color: black;
+	font-family: "BL";
+	font-size: 40px;
+	text-align: right;
+	border: 30px;
+	border-color: lightgrey;
+	grid-area: text;
+}
+.articleBrand {
+	padding: 15px;
+	grid-area: img;
+}
+.articleBrandText {
+	padding-top: 200px;
+	color: black;
+	font-family: "BL";
+	font-size: 40px;
+	text-align: left;
+	grid-area: text;
+
+}
+.footerAll {;
+	background-color: lightgrey;
+	border-top: 5px solid black;
+	grid-area: footer;
+}
+.footerAllList {
+	display: flex;
+	list-style: none;
+	margin: 0px;
+}
+.footerAllListItem {
+	text-align: center;
+	
+}
+.footerAllListItemLink {
+	color: black;
+	font-size: 20px;
+}
