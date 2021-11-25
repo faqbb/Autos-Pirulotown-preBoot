@@ -1,0 +1,72 @@
+@font-face {
+		font-family:"BL" ;
+		src: url("../assets/fonts/aBlackLives.ttf");
+	}
+
+body {
+	background-image: url("../assets/whiteHexagonBackground.jpg");
+	font-family: "BL";
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.gridContainerPadre {
+	display: grid;
+	grid-template-columns: 10% 15% 40% 35%; 
+  	grid-template-rows: 10% 86% auto;  
+  	grid-template-areas:  
+    "icon title nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+header {
+	display: flex;
+	background-color: lightgrey;
+	width: 100%;
+}
+ .headerIcon {
+	grid-area: icon;
+}
+.headerList {
+	grid-area: title;
+}
+.headerNav {
+	grid-area: nav;
+	display: flex;
+}
+section {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
+	background-color: lightgrey;
+	width: 100%;
+	border-top: 2px solid black;
+}
+footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+footer .footerAllListItem{
+	display: flex;
+	padding-right: auto;
+	align-items: center;
+	text-align: center;
+}
+footer .footerAllListItemLink{
+	width: 150px;
+	display: flex;
+	transition: font-size 2s;
+}
+.footerAllListItemLink:hover {
+	font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.gridContainerPadre {
+
+	}
+}

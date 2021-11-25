@@ -6,10 +6,10 @@
 	<title>Contacto</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
-<body>
+<body class="gridContainerPadre">
 	<!-- ABRE ENCABEZADO -->
 	<header class="headerAll">
-		<a href="../home.html"><img src="../assets/icono.png"></a>
+		<a href="../home.html" class="headerIcon"><img src="../assets/icono.png"></a>
 		<ul class="headerList">
 			<li class="headerTitle">Autos Pirulotown </li>
 			<li class="headerSubTitle">Marca Pirulo</li>
@@ -28,28 +28,26 @@
 		<!-- CIERRA ENCABEZADO -->
 	</header>
 	<!-- ABRE CUERPO -->
-	<section>
-		<title>Contactanos</title>
-		<table>
+	<section class="gridContainerContact">
+		<div class="contactTitle">Contactanos</div>
 			<!-- LINKS A REDES -->
-		<tr>
-			<td>
-				<img src="../assets/iconofb.png">
+		<article class="contactLinks">
+			<div >
+				<a href="https://www.facebook.com"><img src="../assets/iconofb.png"></a>
 				<a href="https://www.facebook.com">Autos en Venta Pirulotown</a>
-			</td>
-			<td>
-				<img src="../assets/iconowpp.png">
-				<a href="https://web.whatsapp.com">+2494-663788</a></td>
-			<td>
-				<img src="../assets/iconoig.png">
+			</div>
+			<div >
+				<a href="https://web.whatsapp.com"><img src="../assets/iconowpp.png"></a>
+				<a href="https://web.whatsapp.com">+2494-663788</a>
+			</div>
+			<div>
+				<a href="https://www.instagram.com/?hl=es"><img src="../assets/iconoig.png"></a>
 				<a href="https://www.instagram.com/?hl=es">Autos Pirulotown</a>
-			</td>
-		</tr>
-		</table>
-		<div>O coloque sus datos y nos pondremos en contacto con usted</div>
-	</section>
+			</div>
+		</article>
+		<div class="contactAlt">O coloque sus datos y nos pondremos en contacto con usted</div>
 	<!-- ABRE FORMULARIO -->
-		<form>
+		<form class="contactForm">
 			<input type="text" placeholder="Nombre Completo"><br>
 			<input type="text" placeholder="Direccion de correo"><br>
 			<label for="Localidad">Localidad
@@ -65,23 +63,23 @@
 			<input type="submit" value="Enviar">
 			<input type="reset" value="Restablecer">
 		</form>
+	</section>
 		<!-- CIERRA FORMULARIO -->
-</body>
-<footer class="footerAll">
+		<footer>
 		<!-- ABRE PIE DE PAGINA -->
-		<ul class="footerAllList">
-			<li class="footerAllListItem">
+		<div class="footerItem">
 				<img src="../assets/iconofb.png">
-				<a href="https://www.facebook.com" class="footerAllListItemLink">Autos en Venta Pirulotown</a>
-			</li>
-			<li class="footerAllListItem">
+				<a href="https://www.facebook.com" class="footerItemLink">Autos en Venta Pirulotown</a>
+		</div>
+		<div class="footerItem">
 				<img src="../assets/iconowpp.png">
-				<a href="https://web.whatsapp.com" class="footerAllListItemLink">+2494-663788</a></li>
-			<li class="footerAllListItem">
+				<a href="https://web.whatsapp.com" class="footerItemLink">+2494-663788</a>
+		</div>
+		<div class="footerItem">
 				<img src="../assets/iconoig.png">
-				<a href="https://www.instagram.com/?hl=es" class="footerAllListItemLink">Autos Pirulotown</a>
-			</li>
-		</ul>	
-		<!-- CIERRA PIE DE PAGINA -->
-</footer>
+				<a href="https://www.instagram.com/?hl=es" class="footerItemLink">Autos Pirulotown</a>
+		</div>
+		<!-- CIERRA PIE DE PAGINA -->	
+	</footer>
+</body>
 </html>

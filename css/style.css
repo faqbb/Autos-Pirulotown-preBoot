@@ -1,95 +1,430 @@
 @font-face {
-		font-family:"BL" ;
-		src: url("../assets/fonts/aBlackLives.ttf");
-	}
+  font-family:"BL";
+  src: url("../assets/fonts/aBlackLives.ttf");
+}
+.gridContainerPadre {
+  display: grid; 
+  grid-template-columns: 1fr 2.5fr 3.5fr 4.2fr; 
+  grid-template-rows: auto; 
 
-body {
-	background-image: url("../assets/whiteHexagonBackground.jpg");
-	font-family: "BL";
-	margin: 0px;
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+  margin: 0px;
+  font-family: "BL";
+  background-image: url(../assets/whiteHexagonBackground.jpg);
 }
 a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
-.gridHome {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr); 
-  	grid-template-rows: 10% 86% auto;  
-  	grid-template-areas:  
-    "nav nav nav nav"
-    "section  section section section"
-    "footer footer footer footer";
+ul {
+  list-style: none;
 }
 header {
-	grid-area: nav;
-	background-color: lightgrey;
-	display: flex;
-	border-bottom: 2px solid black;
-	align-items: flex-end;
+    display: grid;
+    grid-template-columns: 10% 20% 70%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "icon title nav";
+     grid-area: header;
+     background-color: lightgrey;
+     border-bottom: solid 2px black;
+   }
+.headerList {
+  padding-left: 0px;
 }
-header .headerList {
-	list-style: none;
-	padding-top: 20px;
+.headerTitle {
+  font-size: 30px;
 }
-header .headerNav {
-	display: flex;
-	list-style: none;
-	justify-content: space-around;
-	padding-top: 65px;
-	padding-left: 100px;
+.headerSubTitle {
+  font-size: 20px;
 }
-header .headerNavList {
-	padding-right: 50px;
-	font-size: 25px;
+.headerNav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 90px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
-header .headerTitle {
-	font-size: 30px;
+.headerNavList {
+  font-size: 25px;
+  transition: font-size 2s;
 }
-header .headerSubTitle {
-	font-size: 15px;
-}
-
-footer {
-	grid-area: footer;
-	display: grid;
-	background-color: lightgrey;
-	width: 100%;
-	border-top: 2px solid black;
-}
-footer ul {
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-}
-footer .footerAllListItem{
-	display: flex;
-	padding-right: auto;
-	align-items: center;
-	text-align: center;
-}
-footer .footerAllListItemLink{
-	width: 150px;
-	display: flex;
+.headerNavList:hover {
+  font-size: 30px;
 }
 section {
-	display: grid;
-	grid-area: section;
+  grid-area: main;
 }
-article {
-	display: flex;
-	padding: 30px;
-}
-.articleVendorText {
-	font-size: 40px;
-	padding-left: 30px;
-	text-align: end;
+.articleVendor {
+  display: flex;
+  padding: 20px;
+  column-gap: 10px;
 }
 .articleVendor img {
-	border: 2px solid black;
+  border: solid 2px black;
+}
+.articleVendorText {
+  font-size: 30px;
+  text-align: right;
+}
+.articleBrand {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+  column-gap: 10px;
 }
 .articleBrandText {
-	font-size: 40px;
-	padding-right: 30px;
-	text-align: left;
+  font-size: 30px;
+  text-align: left;
 }
+.gridContainerAEV {
+  display: grid;
+  grid-template-columns:35% 45% 20%;
+  grid-template-rows:100%;
+  grid-template-areas:
+  "car resume contact";
+  padding: 20px;
+  border-bottom: solid 2px black;
+}
+.carImg {
+  grid-area: car;
+  display: flex;
+  border: solid 2px black;
+}
+.carResume {
+  grid-area: resume;
+  text-align: left;
+  padding-left: 0px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+.carContact {
+  grid-area: contact;
+  display: flex;
+  align-items: end;
+  font-size: 30px;
+  text-align: center;
+}
+.carName {
+  font-size: 35px;
+}
+.gridContainerContact {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.6fr 2fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Title Title Title"
+    "contact contact contact"
+    ". form ."; 
+}
+.contactTitle { 
+  grid-area: Title;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px; 
+}
+.contactLinks { 
+  grid-area: contact;
+  justify-content: space-around;
+  display: flex; 
+  font-size: 30px;
+  padding-top: 70px;
+}
+.contactLinks img {
+  width: 175px;
+  height: 175px;
+}
+.contactLinks a {
+  display: block;
+}
+.contactAlt {
+  grid-area: contact;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+.contactForm { 
+  grid-area: form; 
+  display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.gridContainerUbi {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "map map text text"
+    "map map text text"
+    "pics pics pics pics"; 
+}
+.ubiCon { 
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px; 
+  align-items: center;
+  justify-content: center;
+}
+.ubiConAlt {
+  padding-top: 30px;
+}
+.ubiConAltLink {
+  padding-top: 30px;
+  font-size: 30px;
+}
+.map { 
+  grid-area: map;
+}
+.ubiPics { 
+  grid-area: pics;
+  column-gap: 10px; 
+}
+.ubiPics img {
+  width: 600px;
+  height: 300px;
+}
+.gridContainerClients {
+  display: grid; 
+  grid-template-columns: 0.5fr 0.5fr 1.5fr 1fr; 
+  grid-template-rows: ; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "img name resume rating";
+  padding: 20px;
+  border-bottom: solid 2px black;
+  align-items: center;
+  column-gap: 5px; 
+}
+.clientPic {
+  grid-area: img;
+  border: solid 2px black;
+}
+.clientName {
+  grid-area: name;
+}
+.clientResume {
+  grid-area: resume;
+}
+.clientRate {
+  grid-area: rating;
+}
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  "facebook whatsapp instagram";
+  background-color: lightgrey;
+  border-top: solid 2px black;
+}
+.footerItem {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.footerItemLink {
+  font-size: 20px;
+  transition: font-size 2s;
+}
+.footerItemLink:hover {
+  font-size: 25px;
+}
+/* Inicio vista mobile */
+ @media only screen and (min-width: 0px) and (max-width:  768px) {
+  .gridContainerPadre {
+    grid-template-columns: 100%; 
+    grid-template-rows: 0.5fr  1.3fr 1.3fr 0.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header"
+      "main"
+      "main"
+      "footer";
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    white-space:;
+  }
+  .headerIcon {
+    align-self: center;
+  }
+  .headerList {
+    align-self: center;
+  }
+  .headerTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  .headerSubTitle {
+    font-size: 15px;
+    text-align: center;
+  }
+  .headerNav {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+  section {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+    flex-direction: column;
+    display: flex;
+  }
+  .footerItemLink {
+    font-size: 20px;
+  }
+  .articleVendor {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .articleVendorText {
+    font-size: 15px;
+  }
+  .articleBrand {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .articleBrandText {
+    font-size: 15px;
+  }
+  .gridContainerAEV {
+    display: flex;
+    flex-direction: column;
+  }
+  .carResume {
+    font-size: 15PX;
+  }
+  .gridContainerContact {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "Title"
+        "contact"
+        "contact" 
+        "contact"
+        "form";
+  }
+  .contactLinks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+  }
+  .contactLinks a {
+    text-align: center;
+  }
+  .contactAlt {
+    text-align: center;
+  }
+  .gridContainerUbi {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .gridContainerClients {
+    display: flex;
+    flex-direction: column;
+  }
+  .clientRate {
+    height: 200px;
+  }
+  .clientName {
+    text-align: center;
+  }
+  .clientResume {
+    padding-top: 20px;
+    text-align: center;
+  }
+ }
+/* Cierra vista mobile */
+/* Abre vista tablet */
+  @media only screen and (min-width: 768px) and (max-width:  1024px) {
+    .headerList {
+      padding-left: 50px;
+    }
+    .headerNav {
+      padding-top: 49px;
+      flex-direction: column;
+    }
+    .headerNavList {
+      font-size: 20px;
+      text-align: right;
+    }
+    .footerItemLink {
+      font-size: 15px;
+    }
+    .articleVendor {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .articleVendorText {
+      font-size: 15px;
+      text-align: left;
+    }
+    .articleBrand {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .articleBrandText {
+      font-size: 15px;
+      text-align: left;
+    }
+    .articleVendor img {
+      width: fit-content;
+    }
+    .articleBrand img {
+      width: fit-content;
+    }
+    .gridContainerAEV {
+      display: flex;
+    }
+    .gridContainerAEV ul li {
+      font-size: 15px;
+    }
+    .gridContainerAEV ul .carName {
+      font-size: 30px;
+    }
+    .carResume {
+      padding-top: 0px;
+      padding-left: 20px;
+    }
+    .carContact {
+      font-size: 15px;
+    }
+    .contactAlt {
+      font-size: 20px;
+    }
+    .contactLinks a {
+      font-size: 20px;
+    }
+    .gridContainerUbi {
+      display: grid; 
+    grid-template-columns: 0.8fr 0.9fr 0.8fr; 
+    grid-template-rows: 1fr 1.1fr 1.1fr 0.8fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "map map pics"
+      "map map pics"
+      "text text pics"
+      "text text pics"; 
+    }
+    .ubiPics img {
+      width: 350px;
+    }
+}                       
+/* Cierra vista mobile */
