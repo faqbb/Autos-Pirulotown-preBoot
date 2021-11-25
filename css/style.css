@@ -31,7 +31,7 @@ header {
     grid-template-areas: 
     "icon title nav";
      grid-area: header;
-     background-color: lightgrey;
+     background-image: linear-gradient(to left, lightgrey, black);
      border-bottom: solid 2px black;
    }
 .headerList {
@@ -227,7 +227,7 @@ footer {
   grid-template-rows: 100%;
   grid-template-areas: 
   "facebook whatsapp instagram";
-  background-color: lightgrey;
+  background-image: linear-gradient(to right, lightgrey, black);
   border-top: solid 2px black;
 }
 .footerItem {
@@ -353,7 +353,7 @@ footer {
  }
 /* Cierra vista mobile */
 /* Abre vista tablet */
-  @media only screen and (min-width: 768px) and (max-width:  1024px) {
+  @media only screen and (min-width: 768px) and (max-width:  1285px) {
     .headerList {
       padding-left: 50px;
     }

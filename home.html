@@ -6,13 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Autos Pirulotown</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class= "gridContainerPadre">
 	<!-- ABRE EL ENCABEZADO -->
 	<header>
 		<!-- ICONO Y TITULO -->
 		<a href="" class="headerIcon"><img src="assets/icono.png"></a>
-		<ul class="headerList">
+		<ul class="headerList animate__animated animate__backInRight" > 
 			<li class="headerTitle">Autos Pirulotown </li>
 			<li class="headerSubTitle">Marca Pirulo</li>
 			<li class="headerSubTitle">Nombre Vendedor</li>	
@@ -34,16 +36,16 @@
 		<!-- IMAGEN Y PRESENTACION VENDEDOR -->
 		<article class="articleVendor">
 			<img src="assets/hombre.jpg">
-			<div class="articleVendorText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati, est ad, sit eaque iure! Velit aperiam excepturi provident, id. Iste numquam fuga molestiae repellendus error nostrum maxime id voluptates!</div>
+			<div class="articleVendorText wow fadeIn">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati, est ad, sit eaque iure! Velit aperiam excepturi provident, id. Iste numquam fuga molestiae repellendus error nostrum maxime id voluptates!</div>
 		</article>
 		<!-- LOGO Y PRESENTACION EMPRESA -->
 		<article class="articleBrand">
-			<img src="assets/logomarca.png" class="articleBrandImg">
-			<div class="articleBrandText">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus maxime obcaecati quae rerum natus numquam quis provident iure unde odio in illum porro ratione impedit autem, sapiente, voluptatibus culpa, aliquid!</div>
+			<img src="assets/logomarca.png" class="articleBrandImg ">
+			<div class="articleBrandText wow backInUp" data-wow-duration="2s" data-wow-delay="5s">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus maxime obcaecati quae rerum natus numquam quis provident iure unde odio in illum porro ratione impedit autem, sapiente, voluptatibus culpa, aliquid!</div>
 		</article>
 	</section>
 <!-- CIERRA CUERPO -->
-	<footer>
+	<footer data_aos="fade-up">
 		<!-- ABRE PIE DE PAGINA -->
 		<div class="footerItem">
 				<img src="assets/iconofb.png">
@@ -59,5 +61,8 @@
 		</div>
 		<!-- CIERRA PIE DE PAGINA -->	
 	</footer>
+	<script>
+  		AOS.init();
+	</script>
 </body>
 </html>
